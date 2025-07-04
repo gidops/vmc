@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/aatcabuj/public_html 
+    - export DEPLOYPATH=/home/aatcabuj/public_html/project/project 
     - /bin/cp -r * $DEPLOYPATH
