@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Source of Truth Deployment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #005a9e;
+        }
+        .diagram {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .diagram span {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 10px 15px;
+            background: #e8f4fd;
+            border: 1px solid #007acc;
+            border-radius: 8px;
+        }
+        ul {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Single Source of Truth Deployment Flow</h1>
+
+    <p><strong>Definition:</strong> A single source of truth (SSOT) ensures that the <em>GitHub repository</em> holds the only valid version of your codebase, and all deployments originate from it.</p>
+
+    <div class="diagram">
+        <span>Developer A</span>
+        <span>Developer B</span>
+        <span>Developer C</span>
+        <br><br>
+        <strong>↓ Push code</strong>
+        <br><br>
+        <span style="background: #d1ffd1; border-color: #28a745;"><strong>GitHub Repository (SSOT)</strong></span>
+        <br><br>
+        <strong>↓ Webhook trigger</strong>
+        <br><br>
+        <span style="background: #fff3cd; border-color: #ffc107;"><strong>cPanel Server</strong></span>
+    </div>
+
+    <h2>Benefits of Using SSOT:</h2>
+    <ul>
+        <li>Ensures code consistency across environments</li>
+        <li>Prevents direct edits on the live server</li>
+        <li>Centralized version control and history</li>
+        <li>Safe, traceable, and repeatable deployments</li>
+        <li>Enables collaboration without overwriting changes</li>
+    </ul>
+
+    <p><em>Note:</em> Direct editing on cPanel is discouraged. All team members should work within Git and push to the shared repository for deployment.</p>
+
+</body>
+</html>
