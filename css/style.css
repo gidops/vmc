@@ -1,0 +1,43 @@
+/* ===== style.css ===== */
+/* Core styles extracted from the dashboard */
+@import url('variables.css'); /* Load variables first */
+
+/* === BASE STYLES === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* === LAYOUT STRUCTURE === */
+.dashboard-container {
+    display: flex;
+    flex: 1;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* === UTILITY CLASSES === */
+.highlight {
+    background-color: var(--highlight-bg) !important;
+    border-left-color: var(--highlight-accent) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,301 @@
+[2025-07-03 14:22:58] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 3 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (v.status = 'checked_in' OR v.status = 'checked_out')
+             AND (
+                 DATE(v.check_in_time) = '2025-07-03'
+                 OR 
+                 (v.status = 'checked_out' AND DATE(v.check_out_time) = '2025-07-03')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Export completed. Processed 3 visitors.
+[2025-07-03 14:23:59] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 3 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (v.status = 'checked_in' OR v.status = 'checked_out')
+             AND (
+                 DATE(v.check_in_time) = '2025-07-03'
+                 OR 
+                 (v.status = 'checked_out' AND DATE(v.check_out_time) = '2025-07-03')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Export completed. Processed 3 visitors.
+[2025-07-03 15:20:17] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 3 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (v.status = 'checked_in' OR v.status = 'checked_out')
+             AND (
+                 DATE(v.check_in_time) = '2025-07-03'
+                 OR 
+                 (v.status = 'checked_out' AND DATE(v.check_out_time) = '2025-07-03')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Export completed. Processed 3 visitors.
+[2025-07-03 15:21:45] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 3 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (v.status = 'checked_in' OR v.status = 'checked_out')
+             AND (
+                 DATE(v.check_in_time) = '2025-07-03'
+                 OR 
+                 (v.status = 'checked_out' AND DATE(v.check_out_time) = '2025-07-03')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Export completed. Processed 3 visitors.
+[2025-07-03 15:26:56] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 3 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (
+                 (v.status = 'checked_in' AND DATE(v.check_in_time) = '2025-07-03')
+                 OR
+                 (v.status = 'checked_out' AND DATE(v.check_out_time) = '2025-07-03')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Export completed. Processed 3 visitors.
+[2025-07-03 15:27:20] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 4 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (
+                 (v.status = 'checked_in' AND DATE(v.check_in_time) = '2025-07-03')
+                 OR
+                 (v.status = 'checked_out' AND DATE(v.check_out_time) = '2025-07-03')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Processing visitor #439: Test 3
+Export completed. Processed 4 visitors.
+[2025-07-03 15:29:29] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 4 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (
+                 (v.status = 'checked_in' AND DATE(v.check_in_time) = '2025-07-03')
+                 OR
+                 (v.status = 'checked_out' AND DATE(v.check_out_time) = '2025-07-03')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Processing visitor #439: Test 3
+Export completed. Processed 4 visitors.
+[2025-07-03 15:31:46] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 4 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (
+                 (v.status = 'checked_in' AND v.check_in_time >= '2025-07-03 00:00:00' AND v.check_in_time <= '2025-07-03 23:59:59')
+                 OR
+                 (v.status = 'checked_out' AND v.check_out_time >= '2025-07-03 00:00:00' AND v.check_out_time <= '2025-07-03 23:59:59')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Processing visitor #439: Test 3
+Export completed. Processed 4 visitors.
+[2025-07-03 15:32:15] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 4 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE (
+                 (v.status = 'checked_in' AND v.check_in_time IS NOT NULL AND DATE(v.check_in_time) = '2025-07-03')
+                 OR
+                 (v.status = 'checked_out' AND v.check_out_time IS NOT NULL AND DATE(v.check_out_time) = '2025-07-03')
+             )
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Processing visitor #439: Test 3
+Export completed. Processed 4 visitors.
+[2025-07-03 15:34:51] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 4 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE v.status = 'checked_in' AND DATE(v.check_in_time) = CURDATE()
+
+             UNION
+
+             SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE v.status = 'checked_out' AND DATE(v.check_out_time) = CURDATE()
+
+             ORDER BY check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Processing visitor #439: Test 3
+Export completed. Processed 4 visitors.
+[2025-07-03 15:39:13] Starting export for 2025-07-03
+Checking data with: SELECT COUNT(*) as total 
+              FROM visitors 
+              WHERE (status = 'checked_in' OR status = 'checked_out')
+              AND (
+                  DATE(check_in_time) = '2025-07-03' 
+                  OR DATE(check_out_time) = '2025-07-03'
+              )
+Found 4 visitors for today
+Executing main query: SELECT 
+                v.id, v.name, v.phone, v.organization,
+                v.reason as visit_purpose, v.host_name,
+                v.check_in_time, v.check_out_time,
+                v.floor_of_visit, r.name as receptionist_name
+             FROM visitors v
+             LEFT JOIN receptionists r ON v.receptionist_id = r.id
+             WHERE DATE(v.check_in_time) = CURDATE()
+                OR DATE(v.check_out_time) = CURDATE()
+             ORDER BY v.check_in_time DESC
+Processing visitor #436: Great Test
+Processing visitor #437: Great Test 2
+Processing visitor #438: Test 3
+Processing visitor #439: Test 3
+Export completed. Processed 4 visitors.
